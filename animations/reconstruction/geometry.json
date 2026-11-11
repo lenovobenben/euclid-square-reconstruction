@@ -1,0 +1,248 @@
+{
+  "format_version": 1,
+  "points": {
+    "A": [
+      0.0,
+      1.0
+    ],
+    "B": [
+      3.0,
+      0.0
+    ],
+    "C": [
+      4.0,
+      2.0
+    ],
+    "D": [
+      1.0,
+      4.0
+    ],
+    "E0": [
+      4.0,
+      -4.0
+    ],
+    "E1": [
+      2.0,
+      4.0
+    ],
+    "E": [
+      2.0,
+      4.0
+    ],
+    "P": [
+      0.0,
+      4.0
+    ],
+    "Q": [
+      0.0,
+      0.0
+    ],
+    "R": [
+      4.0,
+      0.0
+    ],
+    "S": [
+      4.0,
+      4.0
+    ]
+  },
+  "lines": {
+    "AC": [
+      -1.0,
+      4.0,
+      -4.0
+    ],
+    "l": [
+      -4.0,
+      -1.0,
+      12.0
+    ],
+    "d": [
+      0.0,
+      1.0,
+      -4.0
+    ],
+    "a": [
+      -1.0,
+      0.0,
+      0.0
+    ],
+    "c": [
+      -1.0,
+      0.0,
+      4.0
+    ],
+    "b": [
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  "circles": {
+    "omega": {
+      "center": [
+        3.0,
+        0.0
+      ],
+      "radius": 4.12310562561766
+    }
+  },
+  "display_points": {
+    "F": [
+      2.5882352941176467,
+      1.6470588235294117
+    ],
+    "H": [
+      4.0,
+      1.0
+    ],
+    "K": [
+      3.0,
+      4.0
+    ]
+  },
+  "steps": [
+    {
+      "operation": "line",
+      "inputs": [
+        "A",
+        "C"
+      ],
+      "outputs": [
+        "AC"
+      ]
+    },
+    {
+      "operation": "perpendicular",
+      "inputs": [
+        "B",
+        "AC"
+      ],
+      "outputs": [
+        "l"
+      ]
+    },
+    {
+      "operation": "circle",
+      "inputs": [
+        "B",
+        "A",
+        "C"
+      ],
+      "outputs": [
+        "omega"
+      ]
+    },
+    {
+      "operation": "intersect_line_circle",
+      "inputs": [
+        "l",
+        "omega"
+      ],
+      "outputs": [
+        "E0",
+        "E1"
+      ]
+    },
+    {
+      "operation": "select_opposite_side",
+      "inputs": [
+        "E0",
+        "E1",
+        "AC",
+        "B"
+      ],
+      "outputs": [
+        "E"
+      ]
+    },
+    {
+      "operation": "line",
+      "inputs": [
+        "D",
+        "E"
+      ],
+      "outputs": [
+        "d"
+      ]
+    },
+    {
+      "operation": "perpendicular",
+      "inputs": [
+        "A",
+        "d"
+      ],
+      "outputs": [
+        "a"
+      ]
+    },
+    {
+      "operation": "perpendicular",
+      "inputs": [
+        "C",
+        "d"
+      ],
+      "outputs": [
+        "c"
+      ]
+    },
+    {
+      "operation": "parallel",
+      "inputs": [
+        "B",
+        "d"
+      ],
+      "outputs": [
+        "b"
+      ]
+    },
+    {
+      "operation": "intersect_lines",
+      "inputs": [
+        "a",
+        "d"
+      ],
+      "outputs": [
+        "P"
+      ]
+    },
+    {
+      "operation": "intersect_lines",
+      "inputs": [
+        "a",
+        "b"
+      ],
+      "outputs": [
+        "Q"
+      ]
+    },
+    {
+      "operation": "intersect_lines",
+      "inputs": [
+        "c",
+        "b"
+      ],
+      "outputs": [
+        "R"
+      ]
+    },
+    {
+      "operation": "intersect_lines",
+      "inputs": [
+        "c",
+        "d"
+      ],
+      "outputs": [
+        "S"
+      ]
+    }
+  ],
+  "source_sha256": {
+    "experiments/square_reconstruction.py": "8526d0e5c34c8c389dcde4d5c3bcfe06771012da11ff845cd55aec383462abb4",
+    "experiments/verify_classification.py": "c8ced50d57f3d084396d4a2e644060ad512c05e9cf77f4ed5bf11a50a058c9dd",
+    "experiments/verify_construction.py": "02dcc0392cc96f8374d5151340434f007d411ed99c86100cef264e7768763f8c",
+    "experiments/verify_linear_system.py": "a4df8dd5471955ded0bea646b196574d50d9185222189493f185e6e03e35c48e",
+    "experiments/export_animation.py": "1ac70aea381dfd707554338a4d468f971db9bc89975016cdd0bf5880e841384a"
+  },
+  "source_example_sha256": "d1cc78a0bfe3db8c54b4f814a87e65ea19396b9bbc78113e766b14fdf49d9455"
+}

@@ -2,6 +2,10 @@
 
 给定四点，要求它们分别位于正方形四条边的严格内部，研究存在条件、全部解数及尺规构造。本项目是 Euclid 几何研究系列的第 7 题。
 
+[观看 4K60 作图动画](animations/reconstruction/media/SquareReconstruction_4k60.mp4) · [动画源码与复现](animations/reconstruction/README.md)
+
+[![十字架法恢复唯一正方形](animations/reconstruction/preview.png)](animations/reconstruction/media/SquareReconstruction_4k60.mp4)
+
 ## 主要结果
 
 解数只能为 **零个、一个或无穷多个**。四点必须组成严格凸四边形。两条对角线等长且垂直时有无穷多解，其余输入用几何极值判据或等价坐标判据确定零解或唯一解。
@@ -22,6 +26,7 @@ $$q=\frac47\ln2-\frac{16}{63}-\frac{\sqrt3\pi}{270}-\frac{41\pi}{6720}
 | 输入、严格边段约束与工具 | [DESIGN](docs/DESIGN.md) |
 | 两种判据、一般证明、连续解族与案例 | [CLASSIFICATION](docs/CLASSIFICATION.md) |
 | 十字架作图、正确性与尺规宏 | [ANSWER](docs/ANSWER.md)、[PROOF](docs/PROOF.md)、[CONSTRUCTION](docs/CONSTRUCTION.md) |
+| 唯一解的 Manim 动画 | [动画说明](animations/reconstruction/README.md) |
 | 完整概率表与蒙特卡洛核对 | [PROBABILITY](docs/PROBABILITY.md) |
 | 概率闭式的解析证明与精确证书 | [PROBABILITY_PROOF](docs/PROBABILITY_PROOF.md) |
 

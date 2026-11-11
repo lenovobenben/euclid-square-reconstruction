@@ -1,0 +1,210 @@
+{
+  "scene": "SquareReconstruction",
+  "movie_file": "SquareReconstruction_4k60.mp4",
+  "geometry_sha256": "0c317c1f3bc0e09c0c04f30e98a9e45c69111b90226784ba84e9d5b40895a962",
+  "animation_source_sha256": "f01a2462a290d920fccc256364ed4b83f7bda8513fae65b4bc6a4fabfe0e0916",
+  "resolution": [
+    3840,
+    2160
+  ],
+  "frame_rate": 60.0,
+  "duration_seconds": 52.35,
+  "sections": [
+    {
+      "title": "四个边上点恢复正方形",
+      "start_seconds": 0.0
+    },
+    {
+      "title": "连接 A、C",
+      "start_seconds": 4.35
+    },
+    {
+      "title": "过 B 作 AC 的垂线",
+      "start_seconds": 7.0
+    },
+    {
+      "title": "以 B 为圆心作圆",
+      "start_seconds": 9.95
+    },
+    {
+      "title": "选取异侧交点 E",
+      "start_seconds": 13.9
+    },
+    {
+      "title": "连接 D、E，取得一条边线",
+      "start_seconds": 21.1
+    },
+    {
+      "title": "恢复其余三条边",
+      "start_seconds": 24.15
+    },
+    {
+      "title": "取得四个顶点",
+      "start_seconds": 30.7
+    },
+    {
+      "title": "为什么 DE 是目标边线",
+      "start_seconds": 36.55
+    },
+    {
+      "title": "正方形 PQRS 已恢复",
+      "start_seconds": 45.4
+    }
+  ],
+  "construction_events": [
+    {
+      "object": "AC",
+      "parents": [
+        "A",
+        "C"
+      ],
+      "seconds": 4.7
+    },
+    {
+      "object": "l",
+      "parents": [
+        "B",
+        "AC"
+      ],
+      "seconds": 7.35
+    },
+    {
+      "object": "right_angle",
+      "parents": [
+        "AC",
+        "l"
+      ],
+      "seconds": 8.35
+    },
+    {
+      "object": "omega",
+      "parents": [
+        "B",
+        "A",
+        "C"
+      ],
+      "seconds": 11.0
+    },
+    {
+      "object": "E0",
+      "parents": [
+        "l",
+        "omega"
+      ],
+      "seconds": 14.25
+    },
+    {
+      "object": "E1",
+      "parents": [
+        "l",
+        "omega"
+      ],
+      "seconds": 14.6
+    },
+    {
+      "object": "E",
+      "parents": [
+        "E0",
+        "E1",
+        "AC",
+        "B"
+      ],
+      "seconds": 14.95
+    },
+    {
+      "object": "BE",
+      "parents": [
+        "B",
+        "E",
+        "l"
+      ],
+      "seconds": 15.55
+    },
+    {
+      "object": "d",
+      "parents": [
+        "D",
+        "E"
+      ],
+      "seconds": 21.45
+    },
+    {
+      "object": "a",
+      "parents": [
+        "A",
+        "d"
+      ],
+      "seconds": 24.5
+    },
+    {
+      "object": "c",
+      "parents": [
+        "C",
+        "d"
+      ],
+      "seconds": 26.4
+    },
+    {
+      "object": "b",
+      "parents": [
+        "B",
+        "d"
+      ],
+      "seconds": 28.3
+    },
+    {
+      "object": "P",
+      "parents": [
+        "a",
+        "d"
+      ],
+      "seconds": 31.05
+    },
+    {
+      "object": "Q",
+      "parents": [
+        "a",
+        "b"
+      ],
+      "seconds": 31.4
+    },
+    {
+      "object": "R",
+      "parents": [
+        "c",
+        "b"
+      ],
+      "seconds": 31.75
+    },
+    {
+      "object": "S",
+      "parents": [
+        "c",
+        "d"
+      ],
+      "seconds": 32.1
+    },
+    {
+      "object": "target_square",
+      "parents": [
+        "P",
+        "Q",
+        "R",
+        "S"
+      ],
+      "seconds": 32.85
+    },
+    {
+      "object": "proof_guides",
+      "parents": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "d",
+        "c"
+      ],
+      "seconds": 37.3
+    }
+  ]
+}

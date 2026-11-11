@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.cache/
+*.log
+animations/**/media/videos/
+animations/**/media/images/
+animations/**/media/texts/
+animations/**/media/Tex/

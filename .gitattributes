@@ -1,0 +1,4 @@
+# Keep hashed sources and geometry certificates byte-identical across checkouts.
+*.py text eol=lf
+*.json text eol=lf
+*.sha256 text eol=lf
