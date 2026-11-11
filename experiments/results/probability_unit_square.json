@@ -1,0 +1,26 @@
+{
+  "model": "four iid uniform points in [0,1]^2, conditioned on strict convexity",
+  "method": "Monte Carlo with strict geometric-extrema classification",
+  "numpy_version": "2.2.4",
+  "bit_generator": "PCG64",
+  "seed": 20261111,
+  "sample_count": 100000000,
+  "strictly_convex_count": 69443291,
+  "unique_solution_count": 10279597,
+  "convex_no_unique_solution_count": 59163694,
+  "conditional_unique_estimate": 0.14802865549675634,
+  "conditional_no_solution_estimate": 0.8519713445032436,
+  "conditional_unique_wilson_95": [
+    0.14794514961118563,
+    0.14811220032297437
+  ],
+  "conditional_no_solution_wilson_95": [
+    0.8518877996770257,
+    0.8520548503888143
+  ],
+  "unconditional_unique_estimate": 0.10279597,
+  "unconditional_convex_estimate": 0.69443291,
+  "unconditional_convex_exact": "25/36",
+  "exact_cross_checked_sample_count": 1024,
+  "infinite_solution_probability": "0 under the continuous model"
+}

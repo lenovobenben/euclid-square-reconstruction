@@ -1,0 +1,96 @@
+{
+  "model": "four iid uniform points in [0,1]^2, all inputs included",
+  "method": "Monte Carlo with strict geometric-extrema classification",
+  "numpy_version": "2.2.4",
+  "bit_generator": "PCG64",
+  "seed": 2026111101,
+  "sample_count": 100000000,
+  "unique_closed_form": "q=4*log(2)/7-16/63-sqrt(3)*pi/270-41*pi/6720",
+  "all_input_probability_table": {
+    "degenerate": {
+      "count": 0,
+      "estimate": 0.0,
+      "analytic_expression": "0",
+      "analytic_probability": 0.0,
+      "wilson_95": [
+        0.0,
+        3.8414586731260706e-08
+      ],
+      "deviation_in_standard_errors": null
+    },
+    "nonconvex_no_solution": {
+      "count": 30562507,
+      "estimate": 0.30562507,
+      "analytic_expression": "11/36",
+      "analytic_probability": 0.3055555555555556,
+      "wilson_95": [
+        0.305534787480271,
+        0.30571536745339417
+      ],
+      "deviation_in_standard_errors": 1.5090763400649259
+    },
+    "convex_unique_solution": {
+      "count": 10283744,
+      "estimate": 0.10283744,
+      "analytic_expression": "q",
+      "analytic_probability": 0.10279506776143654,
+      "wilson_95": [
+        0.10277792204737904,
+        0.1028969884662922
+      ],
+      "deviation_in_standard_errors": 1.3952416882323642
+    },
+    "convex_general_no_solution": {
+      "count": 59153749,
+      "estimate": 0.59153749,
+      "analytic_expression": "25/36-q",
+      "analytic_probability": 0.591649376683008,
+      "wilson_95": [
+        0.5914411445583401,
+        0.5916338284089102
+      ],
+      "deviation_in_standard_errors": -2.276300437546077
+    },
+    "convex_perpendicular_unequal_no_solution": {
+      "count": 0,
+      "estimate": 0.0,
+      "analytic_expression": "0",
+      "analytic_probability": 0.0,
+      "wilson_95": [
+        0.0,
+        3.8414586731260706e-08
+      ],
+      "deviation_in_standard_errors": null
+    },
+    "convex_infinite_solutions": {
+      "count": 0,
+      "estimate": 0.0,
+      "analytic_expression": "0",
+      "analytic_probability": 0.0,
+      "wilson_95": [
+        0.0,
+        3.8414586731260706e-08
+      ],
+      "deviation_in_standard_errors": null
+    }
+  },
+  "strictly_convex_count": 69437493,
+  "unique_solution_count": 10283744,
+  "convex_no_unique_solution_count": 59153749,
+  "conditional_unique_estimate": 0.14810073860241468,
+  "conditional_no_solution_estimate": 0.8518992613975853,
+  "conditional_unique_wilson_95": [
+    0.14801721242704124,
+    0.14818430371371133
+  ],
+  "conditional_no_solution_wilson_95": [
+    0.8518156962862886,
+    0.8519827875729588
+  ],
+  "unconditional_unique_estimate": 0.10283744,
+  "unconditional_convex_estimate": 0.69437493,
+  "unconditional_convex_exact": "25/36",
+  "exact_cross_checked_sample_count": 1024,
+  "exact_grid_cross_checked_sample_count": 1820,
+  "infinite_solution_probability": "0 under the continuous model"
+}
