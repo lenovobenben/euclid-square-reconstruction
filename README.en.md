@@ -131,3 +131,9 @@ The problem and cross construction originate in the author's “尺规作图—�
 **Euclid geometry research series**
 
 [Euclid-Min](https://github.com/lenovobenben/euclid-min) · [Euclid-CCC-Min](https://github.com/lenovobenben/euclid-ccc-min) · [Euclid-Equal-Angle-Min](https://github.com/lenovobenben/euclid-equal-angle-min) · [Euclid-Castillon-Min](https://github.com/lenovobenben/euclid-castillon-min) · [Euclid-Conic-Classification](https://github.com/lenovobenben/euclid-conic-classification) · [Euclid-Cubic-Trisection](https://github.com/lenovobenben/euclid-cubic-trisection) · **Euclid-Square-Reconstruction**
+
+## License and citation
+
+Code, tests, verification programs, build scripts, and configuration use [Apache 2.0](LICENSE). Original documentation, mathematical proofs, construction records, research data, images, and animations use [CC BY 4.0](LICENSE-CONTENT). See the [license scope](LICENSE-SCOPE.md) for coverage and source-material terms.
+
+When citing this project, credit **lenovobenben, Euclid-Square-Reconstruction**, link to the [repository](https://github.com/lenovobenben/euclid-square-reconstruction), and identify the commit or version used. Attribute and mark changes to redistributed or adapted non-software material under CC BY 4.0.
